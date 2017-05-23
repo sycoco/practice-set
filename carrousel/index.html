@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .bigBox{
+            width:1198px;
+            height:484px;
+            margin: 100px auto;
+            background-color: #5abb00;
+            position: relative;
+            overflow: hidden;
+        }
+        .tingzi{
+            position: absolute;
+            left: 50%;
+            margin-left: -195px;
+        }
+
+        /*星星*/
+        .star {
+            position: absolute;
+            left: 341px;
+            top: 96px;
+            width: 30px;
+            height: 30px;
+            background-image: url(" images/xing01.gif");
+            animation: bigger 1.5s infinite;
+        }
+        .star2{
+            position: absolute;
+            left: 800px;
+            top: 200px;
+            width: 30px;
+            height: 30px;
+            background-image: url(" images/xing01.gif");
+            animation: bigger 1.5s infinite;
+            transition-delay: 0.35s;
+        }
+        .star3{
+            position: absolute;
+            left: 420px;
+            top: 35px;
+            width: 30px;
+            height: 30px;
+            background-image: url(" images/xing01.gif");
+            animation: bigger1 1.5s infinite;
+            transition-delay: 0.68s;
+        }
+        @keyframes bigger {
+            0% {
+                transform: scale(0.5);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1.2);
+                opacity: 0.2;
+            }
+        }
+        @keyframes bigger1 {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1.5);
+                opacity: 0.2;
+            }
+        }
+        @keyframes bigger2 {
+            0% {
+                transform: scale(.9);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1.2);
+                opacity: 0.2;
+            }
+        }
+        /*木马*/
+
+
+        .xiaoma1{
+            content: "";
+            position: absolute;
+            top: 215px;
+            left: 388px;
+            background: url( images/xiaoma01.png) no-repeat left bottom;
+            animation: updown 1s infinite alternate;
+        }
+
+        .xiaoma2{
+            position: absolute;
+            top: 215px;
+            left: 477px;
+            content: "";
+            background: url( images/xiaoma02.png) no-repeat left bottom;
+            animation: updown 1s infinite alternate;
+            animation-delay: 0.8s;
+        }
+        .xiaoma3{
+            position: absolute;
+            top: 209px;
+            left: 648px;
+            content: "";
+            background: url( images/xiaoma03.png) no-repeat left bottom;
+            animation: updown 1s infinite alternate;
+            animation-delay: 0.4s;
+        }
+        @keyframes updown {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(30px);
+            }
+        }
+        /*云*/
+        .yun{
+            position: absolute;
+            left: 20px;
+            top: 60px;
+            width: 200px;
+            height: 100px;
+            animation: move 8s linear infinite;
+            z-index: 10;
+        }
+        .yun1{
+            position: absolute;
+            top: 50%;
+            width: 400px;
+            height: 220px;
+            margin-top: -110px;
+            left: -80px;
+        }
+        .yun2{
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            width: 200px;
+            height: 100px;
+            right: 0;
+        }
+        @keyframes move {
+            0%{
+                transform:translateX(1000px);
+            }
+
+            100%{
+                transform:translateX(-1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+   <div class="bigBox">
+       <img src="%C2%A0images/tingzi.png" alt="" class="tingzi"/>
+       <img src="%C2%A0images/xiaoma01.png" alt="" class="xiaoma1"/>
+       <img src="%C2%A0images/xiaoma02.png" alt="" class="xiaoma2"/>
+       <img src="%C2%A0images/xiaoma03.png" alt="" class="xiaoma3"/>
+       <img src="%C2%A0images/yun01.png" alt="" class="yun"/>
+       <img src="%C2%A0images/yun01.png" alt="" class="yun1"/>
+       <img src="%C2%A0images/yun01.png" alt="" class="yun2"/>
+       <img src="%C2%A0images/xing01.gif" alt="" class="star"/>
+       <div class="star">
+       </div>
+       <div class="star2"></div>
+       <div class="star3"></div>
+       <div class="yun"></div>
+   </div>
+</div>
+<script>
+    
+</script>
+</body>
+</html>
