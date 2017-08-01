@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 
+		1. strobj.charCodeAt(index); 注:->返回值为指定索引的Unicode编码;
+								->index为strobj的索引值,如果指定位置没有字符，将返回NaN。
+				
+		2.String.fromCharCode(code1,code2,code3....);注:从一些Unicode字符串中返回一个字符串。
+		3.strObj.charAt(index) ;注:->index为strobj的索引值;
+								->返回指定索引位置处的字符。如果超出有效范围的索引值返回空字符串;
+		4.strObj.slice(start,end) ;注:返回字符串的片段;star ,end均为sringobj的索引;[star,end);
+								->start下标从0开始的strObj指定部分其实索引。如果start为负，将它作为length+start处理，此处length为字符串的长度。 
+								->end小标从0开始的strObj指定部分结束索引。如果end为负，将它作为length+end处理，此处length为字符串的长度。 							 
+		5.strObj.substr(start,length) ;注:返回一个从指定位置开始的指定长度的子字符串。 
+								->start:所需的子字符串的起始索引。
+								->length:虚返回字符个数;
+		6.strObj.substring(start,end) :返回字符串的片段;
+								->start指明截取字符串的起始索引。 
+								->end指明截取字符串的结束索引， 
+								->substring方法使用start和end两者中的较小值作为子字符串的起始点。如果start或end为NaN或者为负数，那么将其替换为0。 
+		7.strObj.indexOf(substr[,startIndex]) 
+								->:返回String对象内第一次出现子字符串位置。如果没有找到子字符串，则返回-1;
+								-substr: 要在String对象中查找的子字符串。 
+								-startIndex: 在String对象内开始查找的索引。如果省略，则从字符串的开始处查找。 
+		8.strObj.lastIndexOf(substr[,startindex]) 
+								->返回String对象中字符串最后出现的位置。如果没有匹配到子字符串，则返回-1。
+								->substr: 要在String对象内查找的子字符串。 
+								->startindex: 在String对象内进行查找的开始索引位置。如果省略，则查找从字符串的末尾开始。 
+		9.strObj.search(reExp) :返回与正则表达式查找内容匹配的第一个字符串的位置。	
+		10.str.concat([string1[,string2...]]),返回字符串值，该值包含了两个或多个提供的字符串的连接;
+								->string1，string2要和所有其他指定的字符串进行连接的String对象或文字。 
+		11.strObj.split([separator[,limit]]) :将一个字符串分割为子字符串，然后将结果作为字符串数组返回。
+								->separator字符串或 正则表达式 对象，它标识了分隔字符串时使用的是一个还是多个字符。如		果忽略该选项，返回包含整个字符串的单一元素数组。 
+								->limit该值用来限制返回数组中的元素个数。  
+		12.toLowerCase :返回一个字符串，该字符串中的字母被转换成小写。	
+		13.toUpperCase:	返回一个字符串，该字符串中的所有字母都被转换为大写字母。
+		14.stringObj.replace(rgExp, replaceText) 
+									->stringObj是字符串(string);
+									->reExp可以是正则表达式对象(RegExp)也可以是字符串(string)，replaceText是替代查找到的字符串
+
+		
+	 -->
+</body>
+<script>	
+		//1.-------------charCodeAt-----------------
+		var str = "ABC"; 
+		str.charCodeAt(0); 
+		console.log(str); //65
+
+		//2.-------------fromCharCode----------------
+		var p=String.fromCharCode(65,66,112);//ABp  
+		console.log(p);
+
+		//3-------------charAt-------------------
+		var str = "ABC"; 
+		str.charAt(1); //打印为B;
+
+		//4.----------------slice-------------------
+		var str = "ABCDEF"; 
+			str.slice(2,4); //打印为 CD;
+
+		//5--------------------substr----------------
+		var str = "ABCDEF"; 
+			str.substr(2,4); //打印为CDEF;
+
+		//6-------------------substring-----------------------
+		var str = "ABCDEF"; 
+			str.substring(2,4);//打印为CD;
+
+		//7.---------------------indexOf---------------------
+		var str = "ABCDECDF"; 
+			str.indexOf("CD"，1); // 由1位置从左向右查找 123... 打印为2;
+
+		//8----------------------lastIndexOf----------------------
+		var str = "ABCDECDF"; 
+			str.lastIndexOf("CD",6)//打印为 5;
+
+		//9------------------------search-------------------------
+		var str = "ABCDECDF"; 
+			str.search(/CD/i);//打印为2; 
+								//i (忽略大小写)
+								//g (全文查找出现的所有匹配字符)
+								//m (多行查找)
+								//gi(全文查找、忽略大小写)
+								//ig(全文查找、忽略大小写)
+		//10----------------------concat---------------------------
+		var str = "ABCDEF"; 
+			str.concat("ABCDEF","ABC"); //打印为ABCDEFABCDEFABC ;
+
+		//11.------------------------split-----------------------------
+		var str = "AA BB CC DD EE FF"; 
+			console.log(str.split(" ",3));//['AB','BB','CC'];
+
+		//12----------------------toLowerCase------------------------------
+		var str = "ABCabc"; 
+			str.toLowerCase(); //打印为abcabc;
+
+		//13-----------------------toUpperCase------------------------------
+		var str = "ABCabc"; 
+			str.toUpperCase(); //打印为ABCABC.
+</script>
+</html>
