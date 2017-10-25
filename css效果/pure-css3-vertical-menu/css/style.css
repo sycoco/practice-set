@@ -1,0 +1,82 @@
+body {
+	background: #EEE;
+	overflow-x:hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.container {
+    position: relative;
+    margin: 0px auto;
+    padding: 50px 0;
+    clear: both;
+}
+
+.toggleSys {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #FFF;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+    width: 100px;
+}
+.toggleSys li {
+  position: relative;
+}
+.toggleSys li a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: #777;
+  text-align: left;
+  height: 36px;
+  position: relative;
+  /*border-bottom: 1px solid #EEE;*/
+}
+.toggleSys li:hover > a {
+  color: #e67e22;
+}
+.toggleSys li ul{
+  position: absolute;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background: #FFF;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -webkit-transition: all 300ms linear;
+  z-index: 1000;
+  left:120px;
+  top: 0px;
+  border-left: 4px solid #e67e22;
+}
+
+.toggleSys li:hover > ul,
+.toggleSys li ul li:hover > ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  left:100px;
+}
+.toggleSys li ul li:hover > ul {
+  top: 0px;
+  left: 200px;
+}
+
+
