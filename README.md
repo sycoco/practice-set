@@ -1,4 +1,4 @@
-### 小例子
+### Some function accumulation
 
-- 工作中积累的一些小方案
-- 持续更新
+- some small programs accumulated in the work
+- continually updated
