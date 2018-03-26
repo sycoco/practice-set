@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>兰芝注水接力</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/preloadjs.min.js"></script>
+		<script type="text/javascript" src="js/addres.js"></script>
+		<!-- <script type="text/javascript" src="js/vconsole.min.js"></script> -->
+		<script type="text/javascript" src="js/init.js"></script>
+		<script>
+			//!(function(a,b,c,d,e,f){var g="",h=a.sessionStorage,i="__admaster_ta_param__",j="tmDataLayer"!==d?"&dl="+d:"";if(a[f]={},a[d]=a[d]||[],a[d].push({startTime:+new Date,event:"tm.js"}),h){var k=a.location.search,l=new RegExp("[?&]"+i+"=(.*?)(&|#|$)").exec(k)||[];l[1]&&h.setItem(i,l[1]),l=h.getItem(i),l&&(g="&p="+l+"&t="+ +new Date)}var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.src="//tag.cdnmaster.cn/tmjs/tm.js?id="+e+j+g,m.async=!0,n.parentNode.insertBefore(m,n)})(window,document,"script","tmDataLayer","TM-296887","admaster_tm");
+		</script>
+		<script type="text/javascript">
+			var is_weixin = 1;//1是微信其它微博
+		</script>
+	</head>
+	<body onLoad="preload()">
+	<!-- <body> -->
+		<div class="box">
+			<div class="music" id="music-btn">
+				<audio src="images/audio/bgmusic.mp3" id="audio" loop="loop" autoplay="autoplay"></audio>
+			</div>
+			<!-- S-loading -->
+			<div id="loading">
+				<img src="images/loading.gif" height="240" width="480" alt="" id="gif">
+				<p id="loading_text">0%</p>
+			</div>
+			<!-- E-loading -->
+			<!-- s1部分 -->
+			<section class="screen" id="s1">
+				<!-- <canvas id="s1_canvas" width="640" height="1040"></canvas> -->
+				<div id="gif_box"></div>
+				<span class="skip_btn"></span>
+				<a href="javascript:;" class="btn"></a>
+			</section>
+			<!-- s1部分 -->
+			<!-- s2部分 -->
+			<section class="screen" id="s2">
+				<canvas id="s2_canvas" width="640" height="1040"></canvas>
+				<span class="skip_btn"></span>
+				<!-- <div class="s2_2">
+					<p class="user_num">99999</p>
+					<a href="javascript:;" class="draw_btn"></a>
+				</div> -->
+			</section>
+			<img src="images/s2_point.png" height="1040" width="640" alt="" class="point">
+			<!-- s2部分 -->
+			<!-- s3部分 -->
+			<section class="screen" id="s3">
+				<img src="images/s3_bg.jpg" height="1040" width="640" alt="">
+				<span class="rule_btn"></span>
+				<div class="form">
+					<p>
+						<input type="tel" placeholder="填写手机号" id="phone">
+					</p>
+					<p>
+						<span>选择您所在的城市</span>
+						<select name="" id="city">
+							<option value="选择您所在的城市" >选择您所在的城市</option>
+						</select>
+					</p>
+					<p>
+						<span>选择您附近的柜台</span>
+						<select name="" id="shop">
+							<option value="选择您附近的柜台">选择您附近的柜台</option>
+						</select>
+					</p>
+					<a href="javascript:;" class="submit_btn"></a>
+				</div>
+				<a href="javascript:;" class="icon show"></a>
+				<!-- S-提交成功 -->
+					<div class="success">
+						<img src="images/s3_success.png" height="1040" width="640" alt="">
+						<span class="next_btn"></span>
+					</div>
+				<!-- E-提交成功 -->
+			</section>
+			<!-- s3部分 -->
+
+			<!-- s4部分 -->
+			<section class="screen" id="s4">
+				<img src="images/s4.jpg" height="1040" width="640" alt="">
+				<p class="phone_box">
+					<input type="tel" placeholder="手机号" maxlength="11" id="moblie">
+				</p>
+				<span class="share_weixin"></span>
+				<a class="share_weibo" href="http://service.weibo.com/share/share.php?url=http://www.baidu.com&title=分享标题&pic=http://ww3.sinaimg.cn/bmiddle/005SMQ9tjw1eq0zx1jcbkj304v04v3ye.jpg"></a>
+				<div class="share">
+					<img src="images/share_img.png" height="1040" width="640" alt="">
+				</div>
+				<!-- S-中奖提示 -->
+				<!-- <div class="prize">
+					<img src="images/prize.png" height="1040" width="640" alt="">
+				</div> -->
+				<!-- E-中奖提示 -->
+
+			</section>
+			<!-- s4部分 -->
+			<!-- 规则 -->
+			<div class="rule_box">	
+				<span class="close_btn"></span>	
+				<img src="images/rule.png" height="1040" width="640" alt="">	
+				<div class="main">
+					<img src="images/rule_weixin.png" height="1496" width="455" alt="">
+					<img src="images/rule_weibo.png" height="1906" width="455" alt="">
+				</div>	
+			</div>
+			<!-- 规则 -->
+
+			<!-- 弹框 -->
+			<div id="alert">
+				<div class="main">
+					<p></p>
+					<span class="close"></span>
+				</div>
+			</div>
+			<!-- 弹框 -->
+		</div>
+
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
