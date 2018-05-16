@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="myDiv"></div>
+	<script>
+		const data = {}
+		const element = document.getElementById('myDiv');
+		data[element] = 'metaData';
+		// console.log(data[element],'data[element]')
+		// console.log(data['[object HTMLDivElement]']) /* 由于对象只接受字符串作为键名，所以element被自动转为字符串[object HTMLDivElement]*/
+		/* ============================================*/
+		/* 1.ES6 提供Map数据结构，类似于对象，也是键值对的集合，但是键的氛围不限制于字符串，各种类型的值（包括对象）都可以当作键*/
+		/* Object结构提供‘字符串--值’的对应,Map结构提供了值---值的对应*/
+		// const m = new Map();
+		// const o = {p: 'qwe'};
+		// m.set(o, {p: 'qwe'});
+		// m.get(o);
+		// console.log(m.has(o));
+		// console.log(m.delete(o));
+		// console.log(m.has(o));
+		/* ============================================*/
+		/* 2.做为构造函数，Map可以接受一个数组作为参数*/
+		// const arrMap = new Map([['name', 'sy'],['age','24']])
+		// console.log(arrMap.size) // 2
+		// console.log(arrMap.has('name')) //true
+		// console.log(arrMap.get('name')) // sy
+		// ===============================================
+		// 3.堆栈：
+		// js基础数据类型:Null,Undefined,String,Number,Boolean
+		// 栈(stock)内存的储存方式:先进后出，后进先出（我们经常在后面赋值的行为会覆盖之前的值，就是因为这个道理）
+		// 引用数据类型和堆(heap)内存
+		// 引用数据类型的值是保存在堆内存中的对象，js不允许直接访问堆内存中的位置，因此我们不能直接操作对象的堆内存空间。所以在操作对象上实际上是在操作对象的引用而不是实际的对象，
+		// 引用类型的值都是按引用访问的，这里的引用可以理解为：保存在栈内存的一个地址，这个地址跟堆内存的实际值相关联
+	
+	</script>
+</body>
+</html>
