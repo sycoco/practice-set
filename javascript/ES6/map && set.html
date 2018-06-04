@@ -35,7 +35,24 @@
 		// 引用数据类型和堆(heap)内存
 		// 引用数据类型的值是保存在堆内存中的对象，js不允许直接访问堆内存中的位置，因此我们不能直接操作对象的堆内存空间。所以在操作对象上实际上是在操作对象的引用而不是实际的对象，
 		// 引用类型的值都是按引用访问的，这里的引用可以理解为：保存在栈内存的一个地址，这个地址跟堆内存的实际值相关联
-	
+		// var parmas = 12341
+		// var obj = {}
+		// obj[parmas] = 1234
+		// console.log(obj[parmas])
+		// console.log(parmas)
+
+		// 创建Iterator接口
+		function makeIterator(array) {
+			var nextIndex = 0;
+			return {
+				next1: function(){
+					return nextIndex < array.length ? {value: array[nextIndex++],done:false}:{value: undefined,done:true}
+				}
+			}
+		}
+		let it = makeIterator(['a','b'])
+
+
 	</script>
 </body>
 </html>
