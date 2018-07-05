@@ -1,0 +1,15 @@
+<section class="member-main-container member-export-container">
+	<header class="head-title-container">
+		<span class="mainTitle" ng-click="$ctrl.operatingSystem(1)">文</span>
+		<span class="mainTitle" ng-click="$ctrl.operatingSystem(2)">件</span>
+		<span class="mainTitle" ng-click="$ctrl.operatingSystem(3)">导</span>
+		<span class="mainTitle" ng-click="$ctrl.operatingSystem(4)">出</span>
+		<span class="mainTitle" ng-click="$ctrl.operatingSystem(5)">列</span>
+		<span class="mainTitle" ng-click="$ctrl.operatingSystem(6)">表</span>
+	</header>
+	<div ng-show="!$ctrl.showContent" class="leLoading">
+		<cc-loading></cc-loading>
+	</div>
+	<cc-grid ng-show="$ctrl.showContent" class="member-grid" opts="$ctrl.exportListGridOption" on-refresh="$ctrl.fresh(opts)"">
+	</cc-grid>
+</section>

@@ -1,0 +1,26 @@
+<div class="day-picker daySelect" ng-click="$ctrl.stop($event)">
+	<div class="dropdown-select">
+		<div class="dropdown-select-input-wrap" ng-click="$ctrl.isOpen = !$ctrl.isOpen; $ctrl.dayPickerReset()">
+			<input type="text" class="dropdown-select-input"
+								ng-model="$ctrl.day"
+								placeholder="{{$ctrl.holderMsg}}"
+								readonly />
+			<div class="dropdown-select-icons">
+				<span class="dropdown-select-down"></span>
+			</div>
+		</div>
+		<div ng-show="$ctrl.isOpen" class="day-picker-days dropdown-panel hide daySelectDay"  ng-style="$ctrl.panelStyle">
+			<ul class="day-picker-days-ul">
+				<li class="day-picker-days-li" ng-class="{'active': $ctrl.days.indexOf(day.value) > -1}"
+						ng-repeat="day in $ctrl.dayList track by $index"
+						cc-bind-html="day.title" ng-click="$ctrl.dayPicker(day.value)">
+				</li>
+			</ul>
+			<div class="day-picker-buttons" ng-if="$ctrl.mulitiple">
+				<button class="btn-ok day-picker-btn-small" ng-click="$ctrl.dayPickerSave(); $ctrl.isOpen = false">保存</button>
+				<a class="day-picker-btn-reset" ng-click="$ctrl.dayPickerReset()">重置</a>
+			</div>
+		</div>
+	</div>
+
+</div>

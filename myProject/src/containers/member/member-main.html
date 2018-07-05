@@ -1,0 +1,19 @@
+<section class="member-main-container" ng-class="$ctrl.page">
+	<header class="head-title-container">
+		<span class="mainTitle">{{$ctrl.config.label}}</span>
+	</header>
+	<query-filter class="query-filter-box" filters="$ctrl.queryFilters" query-fn="$ctrl.fillOpts(param)" ng-if="$ctrl.isLoadComplete"
+	 expand="expand" ng-class="{'open':expand}">
+	</query-filter>
+	<div class="operator-container" ng-show="$ctrl.isLoadComplete">
+		<button ng-show="$ctrl.isPermit('MG0314')" class="btn-ok" ng-click="$ctrl.marketing()">立即营销</button>
+		<a ui-sref="le.member.batchImport" ng-show="$ctrl.config.showLeadBtn">批量导入</a>
+		<a ng-show="$ctrl.config.showExportBtn" ng-click="$ctrl.exportIssue()">导出</a>
+	</div>
+	<div ng-show="!$ctrl.showContent || !$ctrl.isLoadComplete" class="leLoading">
+		<cc-loading></cc-loading>
+	</div>
+	<cc-grid ng-show="$ctrl.showContent" class="member-grid" opts="$ctrl.memberListGridOption" on-refresh="$ctrl.search(opts)"
+	 ng-if="$ctrl.isLoadComplete && $ctrl.memberListGridOption">
+	</cc-grid>
+</section>

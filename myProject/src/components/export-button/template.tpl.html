@@ -1,0 +1,11 @@
+<div ng-if="$ctrl.state === 1">
+	<span ng-click="$ctrl.state = 2">导出</span>
+</div>
+<div ng-if="$ctrl.state === 2">
+	<span>下载文件</span>
+	<span>正在生成最新文件</span>
+</div>
+<div ng-if="$ctrl.state === 3">
+	<span>下载文件</span>
+	<span>重新生成最新文件</span>
+</div>

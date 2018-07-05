@@ -1,0 +1,37 @@
+.btnContainer {
+	margin-top: 20px;
+	min-width: 800px;
+
+	.btnRow + .btnRow {
+		margin-top: 5px;
+	}
+
+	.btnRow {
+		.btnRow-title {
+			display: inline-block;
+			width: 122px;
+			text-align: right;
+			color: #3d3d3d;
+		}
+
+		.btn-item {
+			line-height: 22px;
+			margin-left: 10px;
+			margin-bottom: 15px;
+			display: inline-block;
+			text-align: center;
+			color: #777777;
+			background: #fdfdfd;
+			border: 1px solid #e3e3e3;
+			border-radius: 2px;
+			//width:38px;
+			min-width: 18px;
+			padding: 0 10px;
+			height: 22px;
+			cursor: pointer;
+			&:hover {
+				background: #dbdbdb;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<div class="query-filter-wrap">
+	<div class="query-filter" ng-class="{'expand': $ctrl.expand}">
+		<ul class="filter-column" ng-class="{'expand': $ctrl.expand}">
+			<li class="filter-item" style="float: right">
+				<button id="query-filter-search-btn" class="btn-function-highlight" ng-click="$ctrl.queryFn({param:$ctrl.filters})">搜索</button>
+				<button class="btn-function-normal filter-reset" ng-click="$ctrl.reset()">重置</button>
+				<span ng-hide="$ctrl.hideExpand" class="screening" ng-click="$ctrl.expand = !$ctrl.expand;">{{$ctrl.expand ? '展开':'收起'}}<span class="iconfont icon-arrow arrow" ng-class="{'arrow-up': !$ctrl.expand}"></span></span>
+			</li>
+			<li class="filter-item filterItem-{{$index}} item" ng-if="filterItem.displayName" ng-repeat="filterItem in $ctrl.filters">
+				<span class="filter-item-title">{{filterItem.displayName}}:</span>
+				<le-meta-data-input view-type="{{filterItem.viewType}}" values="filterItem.values" logic="filterItem.logic" options="filterItem.options"
+				 hide-logic="true" disable="filterItem.disable" auto-fill=false min-value=-99999999 allow-negative=true value-chage="$ctrl.valueChage()">
+				</le-meta-data-input>
+			</li>
+			<li style="clear:both;"></li>
+		</ul>
+	</div>
+	<div ng-class="{'query-filter-blank': $ctrl.expand}"></div>
+</div>

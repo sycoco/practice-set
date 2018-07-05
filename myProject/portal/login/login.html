@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loginApp">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="login.css">
+	<title>登录忠诚度引擎</title>
+</head>
+<body ng-controller="loginCtrl as ctrl">
+<section class="loginContainerBody" >
+	<div class="wrap-header" style="width: 100%; min-width: 500px">
+		<div class="shuyun-logo"></div>
+		<div class="aside">
+			<span class="account" ></span>
+            <span class="signOut"><a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAxNjE3N18yNDMzNjRfODAwMDE2MTc3XzJf" target="_blank" title="联系我们" style="color: #bdbdbd;
+    font-size: 13px;
+    font-family: '\\5FAE\8F6F\96C5\9ED1';">联系我们</a></span>
+		</div>
+	</div>
+	<div class="content">
+		<div class="w1000 clearfix login-wrapper">
+			<div class="loginBox">
+				<form id="shuyunLogin">
+					<span class="login-title">登录</span>
+					<div class="userName loginInputWrapper">
+						<input class="borderHighlight" type="text" ng-disabled="ctrl.logining" name="name" placeholder="用户名" ng-model="ctrl.loginData.name" ng-focus="ctrl.inputFocus()"/>
+						<i></i>
+					</div>
+					<div class="userPassWord loginInputWrapper">
+						<input class="borderHighlight" type="password" ng-disabled="ctrl.logining" name="password" placeholder="密码" ng-model="ctrl.loginData.password" ng-focus="ctrl.inputFocus()"/>
+						<i></i>
+					</div>
+
+					<div class="errorMark" ng-show="ctrl.errorMarkFlag">
+						<div></div>
+						<span ng-bind="ctrl.errorContent"></span></div>
+					<div class="subBtn"><a href="javascript:void(0)" ng-click="ctrl.login()">登录</a></div>
+				</form>
+			</div>
+			<div class="loginBoxBg"></div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="">
+			<p class="contactNum">联系电话：400-027-0163</p>
+
+			<p class="markInfo">Copyright © 2011-2014 shuyun Co.,Ltd All Rights Reserved.</p>
+		</div>
+	</div>
+	<div class="bg" id="bg">
+		<div id="output"></div>
+	</div>
+	<div class="loading" ng-show="ctrl.logining">
+		<div class="loading-content">
+			<i></i>
+			加载中...
+		</div>
+		<div class="loading-bg"></div>
+	</div>
+</section>
+<script src="../../node_modules/angular/angular.js"></script>
+<script src="bg.js"></script>
+<script src="../../node_modules/crypto-js/crypto-js.js"></script>
+<script src="login.js"></script>
+</body>
+</html>

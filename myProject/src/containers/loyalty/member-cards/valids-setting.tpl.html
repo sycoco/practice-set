@@ -1,0 +1,43 @@
+<div class="integral-valids-settings-block">
+	<form>
+		<!--<cc-radio ng-model="entity.valids" ng-value="1" checked>当年12月31日失效</cc-radio>-->
+		<cc-radio ng-model="entity.valids" ng-value="2">
+			<input type="number" class="input-small"
+				   ng-model="entity.everyInterval"
+				   ng-if="entity.valids === 2"
+				   autofocus="autofocus"
+				   cc-validator
+				   ng-required="entity.valids === 2"
+				   pattern=^[0-9]*$
+				   max-msg="请输入1-999之间的值"
+				   min-msg="请输入1-999之间的值"
+				   max="999" min="1">
+
+			<input type="number" class="input-small"
+				   ng-model="entity.everyInterval"
+				   ng-init="entity.everyInterval=180"
+				   ng-if="entity.valids !== 2"
+				   ng-required="entity.valids === 2"
+				   pattern=^[0-9]*$
+				   max-msg="请输入1-999之间的值"
+				   min-msg="请输入1-999之间的值"
+				   max="999" min="1">
+
+			<cc-dropdown-select class="cycle-selection" model="entity.cycle1" datalist="$ctrl.cyclelist">
+			</cc-dropdown-select>
+			后失效
+		</cc-radio>
+
+
+		<cc-radio ng-model="entity.valids" ng-value="3" checked>
+			<le-meta-data-input view-type="SELECT"
+								values="entity.unifiedInterval"
+								options="$ctrl.selectList2"></le-meta-data-input>
+			<span>的</span>
+			<le-year-month-picker ng-hide="entity.unifiedInterval[0] === 0" direction="top" no-year="true" date="entity.overdueStrategyConfig.fixValue"></le-year-month-picker>
+			<span ng-show="entity.unifiedInterval[0] === 0">12月31日&nbsp</span>
+			<span>失效</span>
+		</cc-radio>
+		<cc-radio ng-model="entity.valids" ng-value="4">永久有效</cc-radio>
+	</form>
+</div>

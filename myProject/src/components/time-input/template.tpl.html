@@ -1,0 +1,37 @@
+<div class="time-setting-block">
+	<span class="input-name">{{$ctrl.prefix || '每日'}}</span>
+	<span class="wrap-input" ng-click="$ctrl.show = true">
+							<input class="input-HH" type="text"
+								   placeholder="00"
+								   onfocus="this.select()"
+								   ng-focus="$ctrl.smartinput1(0)"
+								   ng-keyup="$ctrl.smartinput1(1, $event)"
+								   ng-model="$ctrl.hour">
+							<span class="sep">:</span>
+							<input class="input-mm" type="text" id="second1"
+								   placeholder="00"
+								   onfocus="this.select()"
+								   ng-model="$ctrl.second">
+						</span>
+	<span class="iconfont icon-calendar" ng-click="$ctrl.show = true"></span>
+	<div class="abs-block" ng-show="$ctrl.show">
+		<div class="wrap">
+			<input class="input-HH" type="text"
+				   placeholder="00"
+				   onfocus="this.select()"
+				   ng-focus="$ctrl.smartinput2(0)"
+				   ng-keyup="$ctrl.smartinput2(1, $event)"
+				   ng-model="$ctrl.hour">
+			<span class="sep">:</span>
+			<input class="input-mm" type="text" id="second2"
+				   placeholder="00"
+				   onfocus="this.select()"
+				   ng-model="$ctrl.second">
+		</div>
+		<div class="calendar-buttons">
+			<button class="calendar-button-cancel" type="button" ng-click="$ctrl.cancel();$ctrl.show = false;$ctrl.close()">取消</button>
+			<button class="calendar-button-ok" type="button" ng-click="$ctrl.confirm();$ctrl.show = false;$ctrl.close()">确定</button>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,1520 @@
+{
+	"loyalty2-mg/1.0/member/plans/orged/current": [
+		{
+			"id": 4,
+			"name": "shiyuetianshi2",
+			"caption": "十月天使积分卡2",
+			"planType": "ORG",
+			"entityId": 1,
+			"enabled": true,
+			"bindStrategy": "AUTO",
+			"numberGenerateStrategyName": "NAME",
+			"numberGenerateConfigValue": "{}",
+			"numberGenerateConfig": {},
+			"entityIdList": [
+				1
+			]
+		}
+	],
+	"pages": [
+		{
+			"id": 1,
+			"pageNum": 1,
+			"currentPage": 1,
+			"totalCount": 40,
+			"pageSize": 10,
+			"list": [
+				{
+					"name": "旗木卡卡西xx",
+					"age": 25,
+					"gender": "男"
+				},
+				{
+					"name": "野原新之助xx",
+					"age": 5,
+					"gender": "男"
+				},
+				{
+					"name": "藤原拓海xx",
+					"age": 20,
+					"gender": "男"
+				},
+				{
+					"name": "朽木露基亚xx",
+					"age": 18,
+					"gender": "女"
+				},
+				{
+					"name": "毛利兰xx",
+					"age": 18,
+					"gender": "女"
+				},
+				{
+					"name": "江户川乱步xx",
+					"age": "不详",
+					"gender": "男"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"pageNum": 4,
+			"pageSize": 10,
+			"totals": 40,
+			"list": [
+				{
+					"name": "旗木卡卡西xx",
+					"age": 254,
+					"gender": "男"
+				},
+				{
+					"name": "野原新之助xx",
+					"age": 54,
+					"gender": "男"
+				},
+				{
+					"name": "藤原拓海xx",
+					"age": 204,
+					"gender": "男"
+				},
+				{
+					"name": "朽木露基亚xx",
+					"age": 184,
+					"gender": "女"
+				},
+				{
+					"name": "毛利兰xx",
+					"age": 184,
+					"gender": "女"
+				},
+				{
+					"name": "江户川乱步xx",
+					"age": "不详",
+					"gender": "男"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"pageNum": 1,
+			"pageSize": 20,
+			"totals": 40,
+			"list": [
+				{
+					"name": "旗木卡卡西",
+					"age": 25,
+					"gender": "男"
+				},
+				{
+					"name": "野原新之助",
+					"age": 5,
+					"gender": "男"
+				},
+				{
+					"name": "藤原拓海",
+					"age": 20,
+					"gender": "男"
+				},
+				{
+					"name": "朽木露基亚",
+					"age": 18,
+					"gender": "女"
+				},
+				{
+					"name": "毛利兰",
+					"age": 18,
+					"gender": "女"
+				},
+				{
+					"name": "江户川乱步",
+					"age": "不详",
+					"gender": "男"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"pageNum": 2,
+			"pageSize": 20,
+			"totals": 40,
+			"list": [
+				{
+					"name": "旗木卡卡西1",
+					"age": 2,
+					"gender": "男"
+				},
+				{
+					"name": "野原新之助1",
+					"age": 5,
+					"gender": "男"
+				},
+				{
+					"name": "藤原拓海1",
+					"age": 10,
+					"gender": "男"
+				},
+				{
+					"name": "朽木露基亚1",
+					"age": 28,
+					"gender": "女"
+				},
+				{
+					"name": "毛利兰1",
+					"age": 28,
+					"gender": "女"
+				},
+				{
+					"name": "江户川乱步1",
+					"age": "不详",
+					"gender": "男"
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"name": "会员信息管理",
+			"state": "le.member",
+			"icon": "",
+			"children": [
+				{
+					"name": "会员总览",
+					"state": "le.member.information",
+					"icon": "",
+					"children": []
+				},
+				{
+					"name": "积分变更记录",
+					"state": "le.member.pointsRecords",
+					"icon": "",
+					"children": []
+				},
+				{
+					"name": "等级变更记录",
+					"state": "le.member.levelRecords",
+					"icon": "",
+					"children": []
+				},
+				{
+					"name": "信息变更记录",
+					"state": "le.member.informationRecords",
+					"icon": "",
+					"children": []
+				}
+			]
+		},
+		{
+			"name": "忠诚度管理",
+			"state": "le.loyalty",
+			"icon": "",
+			"children": [
+				{
+					"name": "会员卡设置",
+					"state": "le.loyalty.memberCards",
+					"icon": "",
+					"children": []
+				},
+				{
+					"name": "等级规则",
+					"state": "le.loyalty.levelRules",
+					"icon": "",
+					"children": []
+				},
+				{
+					"name": "消费送积分规则",
+					"state": "le.loyalty.pointsRules",
+					"icon": "",
+					"children": []
+				}
+			]
+		},
+		{
+			"name": "会员互动管理",
+			"state": "le.interactive",
+			"icon": "",
+			"children": []
+		}
+	],
+	"instant-search": [
+		{
+			"title": "上海",
+			"value": "sh"
+		},
+		{
+			"title": "北京",
+			"value": "bj"
+		},
+		{
+			"title": "深圳",
+			"value": "sz"
+		},
+		{
+			"title": "广州",
+			"value": "gz"
+		},
+		{
+			"title": "南京",
+			"value": "nj"
+		}
+	],
+	"shops": [
+		{
+			"name": "天猫店铺",
+			"value": "tb",
+			"active": true,
+			"child": [
+				{
+					"name": "小猫时尚旗舰店",
+					"active": true,
+					"value": "tb-cut",
+					"logo": "http://himg.bdimg.com/sys/portrait/item/e999e992b1c2b7e58588e7949f7b16.jpg"
+				},
+				{
+					"name": "小狗时尚旗舰店",
+					"value": "tb-dog",
+					"logo": "http://himg.bdimg.com/sys/portrait/item/e999e992b1c2b7e58588e7949f7b16.jpg"
+				},
+				{
+					"name": "小仔时尚旗舰店",
+					"value": "tb-cub",
+					"logo": "http://himg.bdimg.com/sys/portrait/item/e999e992b1c2b7e58588e7949f7b16.jpg"
+				},
+				{
+					"name": "洋陽轩旗舰店",
+					"value": "tb-yy",
+					"logo": "http://himg.bdimg.com/sys/portrait/item/e999e992b1c2b7e58588e7949f7b16.jpg"
+				}
+			]
+		},
+		{
+			"name": "京东店铺",
+			"value": "jd",
+			"child": [
+				{
+					"name": "小猫时尚旗舰店",
+					"value": "jd-cut",
+					"logo": "http://himg.bdimg.com/sys/portrait/item/e999e992b1c2b7e58588e7949f7b16.jpg"
+				},
+				{
+					"name": "小狗时尚旗舰店",
+					"value": "jd-dog",
+					"logo": "http://himg.bdimg.com/sys/portrait/item/e999e992b1c2b7e58588e7949f7b16.jpg"
+				},
+				{
+					"name": "小仔时尚旗舰店",
+					"value": "jd-cub",
+					"logo": "http://himg.bdimg.com/sys/portrait/item/e999e992b1c2b7e58588e7949f7b16.jpg"
+				},
+				{
+					"name": "洋陽轩旗舰店",
+					"value": "jd-yy",
+					"logo": "http://himg.bdimg.com/sys/portrait/item/e999e992b1c2b7e58588e7949f7b16.jpg"
+				}
+			]
+		}
+	],
+	"logic": [
+		{
+			"name": "MAX"
+		},
+		{
+			"name": "MIN"
+		},
+		{
+			"name": "SUM"
+		},
+		{
+			"name": "FIRST"
+		}
+	],
+	"rule": [
+		{
+			"id": 2,
+			"caption": "大促规则组",
+			"ruleFunctionName": "MAX",
+			"defaultRule": "4 * 20",
+			"cardPlanId": 10,
+			"ruleGroupList": [
+				{
+					"ruleGroup": {
+						"title": "饿了么别叫妈, 叫饿了么",
+						"logic": "OR",
+						"conditions": [
+							{
+								"title": "订单金额规则",
+								"condition": {
+									"type": "expression",
+									"uid": "1",
+									"title": "订单金额大于50",
+									"operator": "GE",
+									"values": [
+										"50"
+									]
+								}
+							},
+							{
+								"title": "订单金额规则sss",
+								"condition": {
+									"type": "expression",
+									"uid": "1",
+									"title": "订单金额大于50",
+									"operator": "GE",
+									"values": [
+										"50"
+									]
+								}
+							}
+						]
+					},
+					"valueExpr": "2+3+4+[5]"
+				}
+			]
+		}
+	],
+	"member": {
+		"list": [
+			{
+				"tenantId": null,
+				"openid": "o-QAGszBy1aAdHnHxY4-kkd10j3E",
+				"wechatPublicNumber": "wx1b83843264997d6b",
+				"nickname": "微笑",
+				"headimgurl": "http://wx.qlogo.cn/mmopen/sibvlGQXEShNfwnFP3G8IM1wQJ9sMYHw0e3iaJEWlTQd0bRPx94ibl0FzynFibAgaey9cRK24z5vCYPHLNps5ewY9o5xTw9GYDmd/0",
+				"sex": "2",
+				"language": null,
+				"country": "中国",
+				"province": "浙江",
+				"city": "杭州",
+				"subscribe": 0,
+				"subscribeTime": "2016-10-11T14:26:09.000+0800",
+				"unionid": null,
+				"groupid": null,
+				"remark": "",
+				"createdAt": null,
+				"updatedAt": null,
+				"weChatUserInfoTagModels": null
+			},
+			{
+				"tenantId": null,
+				"openid": "o-QAGswzowWeHEF2lAd9Fp6gv60M",
+				"wechatPublicNumber": "wx1b83843264997d6b",
+				"nickname": "＊俞小主＊",
+				"headimgurl": "http://wx.qlogo.cn/mmopen/sibvlGQXEShNfwnFP3G8IMzQUrNsz7icp6FWUzCrfsW6qlpSCd31m5qwPsiavj42eMiaTiadaEOicukUxmTfAEWwpaoPJGWx4tGfhe/0",
+				"sex": "2",
+				"language": null,
+				"country": "中国",
+				"province": "浙江",
+				"city": "杭州",
+				"subscribe": 0,
+				"subscribeTime": "2016-10-11T14:26:03.000+0800",
+				"unionid": null,
+				"groupid": null,
+				"remark": "",
+				"createdAt": null,
+				"updatedAt": null,
+				"weChatUserInfoTagModels": null
+			},
+			{
+				"tenantId": null,
+				"openid": "o-QAGs8jePrPE59lFCA6sa3GZNtk",
+				"wechatPublicNumber": "wx1b83843264997d6b",
+				"nickname": "介于石，不终日",
+				"headimgurl": "http://wx.qlogo.cn/mmopen/JbMzLh0FoAibKvbezYlGN5Qd2lv1Pxr676bTw7EaWNp5URJHMVZF03VicJaCTxRIbB0ImZCfjmUh9VQr0XLfb4CA/0",
+				"sex": "2",
+				"language": null,
+				"country": "中国",
+				"province": "河北",
+				"city": "石家庄",
+				"subscribe": 1,
+				"subscribeTime": "2016-10-11T14:19:05.000+0800",
+				"unionid": null,
+				"groupid": null,
+				"remark": "",
+				"createdAt": null,
+				"updatedAt": null,
+				"weChatUserInfoTagModels": null
+			},
+			{
+				"tenantId": null,
+				"openid": "o-QAGs38HSEkQ0aZUnH70PD6jTOI",
+				"wechatPublicNumber": "wx1b83843264997d6b",
+				"nickname": "颖",
+				"headimgurl": "http://wx.qlogo.cn/mmopen/vS2htCSG7Tjplf3Z6oH7ETLibxETias5T7l5zGJIhTCWKiatdtryKqtt6kkHvsxAaHnwlNJw64ug198TypmJHmGJ7gog3IgELiaJ/0",
+				"sex": "2",
+				"language": null,
+				"country": "中国",
+				"province": "河北",
+				"city": "石家庄",
+				"subscribe": 1,
+				"subscribeTime": "2016-10-11T14:18:36.000+0800",
+				"unionid": null,
+				"groupid": null,
+				"remark": "",
+				"createdAt": null,
+				"updatedAt": null,
+				"weChatUserInfoTagModels": null
+			},
+			{
+				"tenantId": null,
+				"openid": "o-QAGszNoK2nZUrmc5tDRh9kyCAc",
+				"wechatPublicNumber": "wx1b83843264997d6b",
+				"nickname": "-赵羽棥＊＊",
+				"headimgurl": "http://wx.qlogo.cn/mmopen/7soANFEgHcQUe8x7En2xblv2tJIiaknDgVaudoyZVPbGIO8AtEZWg1nHz6BzrDAa7ZHicqNetDBpOe1X340Yr2PmCtWk3mNwD5/0",
+				"sex": "1",
+				"language": null,
+				"country": "中国",
+				"province": "广东",
+				"city": "广州",
+				"subscribe": 1,
+				"subscribeTime": "2016-10-11T14:04:14.000+0800",
+				"unionid": null,
+				"groupid": null,
+				"remark": "",
+				"createdAt": null,
+				"updatedAt": null,
+				"weChatUserInfoTagModels": null
+			},
+			{
+				"tenantId": null,
+				"openid": "o-QAGsyp7K_oeugCuzBgeXHk-mSE",
+				"wechatPublicNumber": "wx1b83843264997d6b",
+				"nickname": "00",
+				"headimgurl": "http://wx.qlogo.cn/mmopen/Q3auHgzwzM6Xczs5iaOmZTV813icY9GznOHBFjMUP4kxDqnnwGpfxdpWC8PCcKQeB4NDtujM3dClbfr1gbhopMpfUYoySic5ffQTBQtoiadOyqY/0",
+				"sex": "2",
+				"language": null,
+				"country": "泽西岛",
+				"province": "",
+				"city": "",
+				"subscribe": 1,
+				"subscribeTime": "2016-10-11T11:01:53.000+0800",
+				"unionid": null,
+				"groupid": null,
+				"remark": "",
+				"createdAt": null,
+				"updatedAt": null,
+				"weChatUserInfoTagModels": null
+			},
+			{
+				"tenantId": null,
+				"openid": "o-QAGs0bsRoJbfg5O3NGhrTHQhlc",
+				"wechatPublicNumber": "wx1b83843264997d6b",
+				"nickname": "渺渺",
+				"headimgurl": "http://wx.qlogo.cn/mmopen/PiajxSqBRaEL6NnFrGMdpFTGfNzibFF9LOzmDZAvWJmILTI0Qucoic4kq9xiaEVXFzNdib4hQ2aBdg2Bwxxl35XGhyA/0",
+				"sex": "2",
+				"language": null,
+				"country": "中国",
+				"province": "上海",
+				"city": "浦东新区",
+				"subscribe": 1,
+				"subscribeTime": "2016-10-11T10:31:58.000+0800",
+				"unionid": null,
+				"groupid": null,
+				"remark": "",
+				"createdAt": null,
+				"updatedAt": null,
+				"weChatUserInfoTagModels": null
+			},
+			{
+				"tenantId": null,
+				"openid": "o-QAGs789MwT-ZFOG-qwTxRU_Vgg",
+				"wechatPublicNumber": "wx1b83843264997d6b",
+				"nickname": "蓬勃",
+				"headimgurl": "http://wx.qlogo.cn/mmopen/7soANFEgHcQXHGMfeGanj34GEyXLHBiaMOURtuVHIrzbOJ0WfpKr6CgDVsYZZdc6NVOHlJ2iaRm88j5TKrleAMWCI2Gus4Zsao/0",
+				"sex": "1",
+				"language": null,
+				"country": "中国",
+				"province": "北京",
+				"city": "大兴",
+				"subscribe": 1,
+				"subscribeTime": "2016-10-11T10:15:11.000+0800",
+				"unionid": null,
+				"groupid": null,
+				"remark": "",
+				"createdAt": null,
+				"updatedAt": null,
+				"weChatUserInfoTagModels": null
+			},
+			{
+				"tenantId": null,
+				"openid": "o-QAGs5pZpzPgXD18FZOtCqNAC7o",
+				"wechatPublicNumber": "wx1b83843264997d6b",
+				"nickname": "奔跑的蜗牛",
+				"headimgurl": "http://wx.qlogo.cn/mmopen/2kpMNDYsSfCBic3fywogmrZ7ePXGr8orricEKh0relg2K3YsVriakl20Eic7OntCnV2RZ1iaZHv4NZibLt7S79XOIuTQ/0",
+				"sex": "1",
+				"language": null,
+				"country": "中国",
+				"province": "河北",
+				"city": "石家庄",
+				"subscribe": 1,
+				"subscribeTime": "2016-10-11T10:14:39.000+0800",
+				"unionid": null,
+				"groupid": null,
+				"remark": "",
+				"createdAt": null,
+				"updatedAt": null,
+				"weChatUserInfoTagModels": null
+			},
+			{
+				"tenantId": null,
+				"openid": "o-QAGszwzq4l9h8oI-9Odpv-Daac",
+				"wechatPublicNumber": "wx1b83843264997d6b",
+				"nickname": "冷暖自知",
+				"headimgurl": "http://wx.qlogo.cn/mmopen/sibvlGQXEShNfwnFP3G8IM3L8vbTiclDLSyoChm3ogQKhevxjiafCg7dl9ARDNiaRLt9mgFHSqiafDbvLQYWhACReOS7S89k5wM1m/0",
+				"sex": "2",
+				"language": null,
+				"country": "中国",
+				"province": "河北",
+				"city": "石家庄",
+				"subscribe": 1,
+				"subscribeTime": "2016-10-11T10:13:37.000+0800",
+				"unionid": null,
+				"groupid": null,
+				"remark": "",
+				"createdAt": null,
+				"updatedAt": null,
+				"weChatUserInfoTagModels": null
+			}
+		],
+		"pageNum": 1,
+		"pageSize": 10,
+		"totals": 221
+	},
+	"rankList": [
+		{
+			"title": "VIP会员",
+			"value": "1"
+		},
+		{
+			"title": "顶级会员",
+			"value": "0"
+		}
+	],
+	"metas": [
+		{
+			"id": 19,
+			"caption": "总金额",
+			"properties": []
+		},
+		{
+			"id": 2,
+			"caption": " 子订单",
+			"properties": [
+				{
+					"name": "sub_money",
+					"caption": "子订单金额",
+					"desc": "子订单金额",
+					"dataType": "DOUBLE",
+					"id": 3,
+					"schemaId": 2,
+					"type": "PROPERTY"
+				}
+			]
+		},
+		{
+			"id": 12,
+			"caption": "会员",
+			"properties": [
+				{
+					"name": "GRADE-3",
+					"caption": "会员数云食堂等级计划",
+					"id": 5,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-3-currentValid",
+					"caption": "当前数云食堂等级计划",
+					"id": 6,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-3-totalGain",
+					"caption": "累计获取数云食堂等级计划",
+					"id": 7,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-3-totalConsume",
+					"caption": "累计消费数云食堂等级计划",
+					"id": 8,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-4-currentValid",
+					"caption": "当前京豆",
+					"id": 9,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-4-totalGain",
+					"caption": "累计获取京豆",
+					"id": 10,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-4-totalConsume",
+					"caption": "累计消费京豆",
+					"id": 11,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				}
+			]
+		},
+		{
+			"id": 18,
+			"caption": "订单1",
+			"properties": [
+				{
+					"name": "toMoney",
+					"caption": "金额",
+					"desc": "订单金额",
+					"dataType": "LONG",
+					"postfix": "元",
+					"formatTypeName": "NUMBER",
+					"formatConfig": "{\"config1\":\"格式化值3\",\"config2\":\"格式化值4\"}",
+					"id": 17,
+					"schemaId": 18,
+					"type": "PROPERTY"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"caption": " 订单",
+			"properties": [
+				{
+					"name": "money",
+					"caption": "订单金额",
+					"desc": "订单金额",
+					"dataType": "LONG",
+					"id": 1,
+					"schemaId": 1,
+					"type": "PROPERTY"
+				}
+			]
+		}
+	],
+	"vars": [
+		{
+			"id": 1,
+			"caption": "基础积分规则组",
+			"ruleFunctionName": "SUM",
+			"defaultRule": "2+3",
+			"cardPlanId": 10,
+			"ruleGroupList": []
+		},
+		{
+			"id": 2,
+			"caption": "大促规则组",
+			"ruleFunctionName": "MAX",
+			"defaultRule": "4 * 20",
+			"cardPlanId": 10,
+			"ruleGroupList": [
+				{
+					"ruleGroup": {
+						"logic": "OR",
+						"conditions": [
+							{
+								"title": "订单金额规则",
+								"condition": {
+									"type": "expression",
+									"uid": "1",
+									"title": "订单金额大于50",
+									"operator": "GE",
+									"values": [
+										"50"
+									]
+								}
+							}
+						]
+					},
+					"valueExpr": "2+3+4+[5]"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"caption": "基础规则组3",
+			"ruleFunctionName": "SUM",
+			"defaultRule": "3 + 4 + FIRST(2,3)",
+			"cardPlanId": 10,
+			"ruleGroupList": [
+				{
+					"ruleGroup": {
+						"logic": "OR",
+						"conditions": [
+							{
+								"title": "订单金额规则",
+								"condition": {
+									"type": "expression",
+									"uid": "1",
+									"title": "订单金额大于50",
+									"operator": "GE",
+									"values": [
+										"50"
+									]
+								}
+							}
+						]
+					},
+					"valueExpr": "2+3+4+[5]"
+				}
+			]
+		}
+	],
+	"RulesSchemasResource": [
+		{
+			"id": 2,
+			"caption": " 子订单",
+			"properties": [
+				{
+					"name": "sub_money",
+					"caption": "子订单金额",
+					"desc": "子订单金额",
+					"dataType": "DOUBLE",
+					"id": 3,
+					"schemaId": 2,
+					"type": "PROPERTY"
+				}
+			]
+		},
+		{
+			"id": 12,
+			"caption": "会员",
+			"properties": [
+				{
+					"name": "GRADE-3",
+					"caption": "会员等级",
+					"id": 5,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-3-currentValid",
+					"caption": "当前积分",
+					"id": 6,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-3-totalGain",
+					"caption": "累计前积分",
+					"id": 7,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-3-totalConsume",
+					"caption": "累计前积分",
+					"id": 8,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-4-currentValid",
+					"caption": "当前京豆",
+					"id": 9,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-4-totalGain",
+					"caption": "累计获取京豆",
+					"id": 10,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				},
+				{
+					"name": "POINT-4-totalConsume",
+					"caption": "累计消费京豆",
+					"id": 11,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10
+				}
+			]
+		},
+		{
+			"id": 1,
+			"caption": " 订单",
+			"properties": [
+				{
+					"name": "money",
+					"caption": "订单金额",
+					"desc": "订单金额",
+					"dataType": "LONG",
+					"id": 1,
+					"schemaId": 1,
+					"type": "PROPERTY"
+				}
+			]
+		}
+	],
+	"RulesvarsResource": [
+		{
+			"id": 1,
+			"caption": "基础积分规则组",
+			"ruleFunctionName": "SUM",
+			"defaultRule": "2+3",
+			"cardPlanId": 10,
+			"ruleGroupList": []
+		},
+		{
+			"id": 2,
+			"caption": "大促规则组",
+			"ruleFunctionName": "MAX",
+			"defaultRule": "4 * 20",
+			"cardPlanId": 10,
+			"ruleGroupList": [
+				{
+					"ruleGroup": {
+						"logic": "OR",
+						"conditions": [
+							{
+								"title": "订单金额规则",
+								"condition": {
+									"type": "expression",
+									"uid": "1",
+									"title": "订单金额大于50",
+									"operator": "GE",
+									"values": [
+										"50"
+									]
+								}
+							}
+						]
+					},
+					"valueExpr": "2+3+4+[5]"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"caption": "基础规则组3",
+			"ruleFunctionName": "SUM",
+			"defaultRule": "3 + 4 + FIRST(2,3)",
+			"cardPlanId": 10,
+			"ruleGroupList": [
+				{
+					"ruleGroup": {
+						"logic": "OR",
+						"conditions": [
+							{
+								"title": "订单金额规则",
+								"condition": {
+									"type": "expression",
+									"uid": "1",
+									"title": "订单金额大于50",
+									"operator": "GE",
+									"values": [
+										"50"
+									]
+								}
+							}
+						]
+					},
+					"valueExpr": "2+3+4+[5]"
+				}
+			]
+		}
+	],
+	"RulesExprFunctionResource": [
+		{
+			"id": 1,
+			"name": "SUM",
+			"caption": "总和",
+			"desc": "总和",
+			"effectRegion": "DEFAULT",
+			"defineCreateDate": "2016-08-08 00:00:00"
+		},
+		{
+			"id": 2,
+			"name": "MAX",
+			"caption": "最大值",
+			"desc": "最大值",
+			"effectRegion": "DEFAULT",
+			"defineCreateDate": "2016-08-08 00:00:00"
+		},
+		{
+			"id": 3,
+			"name": "MIN",
+			"caption": "最小值",
+			"desc": "最小值",
+			"effectRegion": "DEFAULT",
+			"defineCreateDate": "2016-08-08 00:00:00"
+		},
+		{
+			"id": 4,
+			"name": "FIRST",
+			"caption": "第一个",
+			"desc": "第一个满足条件的规则",
+			"effectRegion": "DEFAULT",
+			"defineCreateDate": "2016-08-08 00:00:00"
+		}
+	],
+	"memberCardSettingLevel": [
+		{
+			"id": 1,
+			"cardGradePlanId": 3,
+			"caption": "店铺会员",
+			"enabled": true,
+			"order": 0,
+			"platGradeId": 1,
+			"platGradeCaption": "店铺会员",
+			"bottom": true,
+			"bottomModifiable": false,
+			"syncPlatGradeId": 1
+		},
+		{
+			"id": 2,
+			"cardGradePlanId": 3,
+			"caption": "普通会员",
+			"enabled": true,
+			"order": 1,
+			"platGradeId": 2,
+			"platGradeCaption": "普通会员",
+			"bottom": true,
+			"bottomModifiable": false,
+			"syncPlatGradeId": 2
+		},
+		{
+			"id": 3,
+			"cardGradePlanId": 3,
+			"caption": "高级会员",
+			"enabled": true,
+			"order": 2,
+			"platGradeId": 3,
+			"platGradeCaption": "高级会员",
+			"bottom": false,
+			"bottomModifiable": true,
+			"syncPlatGradeId": 3
+		},
+		{
+			"id": 4,
+			"cardGradePlanId": 3,
+			"caption": "VIP会员",
+			"enabled": true,
+			"order": 3,
+			"platGradeId": 4,
+			"platGradeCaption": "VIP会员",
+			"bottom": false,
+			"bottomModifiable": true,
+			"syncPlatGradeId": 4
+		},
+		{
+			"id": 5,
+			"cardGradePlanId": 3,
+			"caption": "至尊VIP",
+			"enabled": true,
+			"order": 4,
+			"platGradeId": 5,
+			"platGradeCaption": "至尊VIP",
+			"bottom": false,
+			"bottomModifiable": true,
+			"syncPlatGradeId": 5
+		}
+	],
+	"order": [
+		{
+			"id": 1,
+			"cardPointPlanId": 4,
+			"schemaId": 1,
+			"ruleContent": "{}",
+			"exprContent": "2+3-4",
+			"ruleStartDate": "2016-10-11 14:11:28",
+			"currentValid": true,
+			"unionId": 1,
+			"version": 1
+		},
+		{
+			"id": 1,
+			"cardPointPlanId": 4,
+			"schemaId": 1,
+			"ruleContent": "{}",
+			"exprContent": "2+3-4",
+			"ruleStartDate": "2016-10-11 14:11:28",
+			"currentValid": true,
+			"unionId": 1,
+			"version": 1
+		}
+	],
+	"points": {
+		"id": 4,
+		"cardPlanId": 10,
+		"name": "1",
+		"caption": "数云京豆",
+		"viewCaption": "京豆",
+		"postfix": "京豆",
+		"enabled": true,
+		"useStrategy": "FULL",
+		"negativeDeductable": true,
+		"freezable": true,
+		"defaultFreezeTime": 15,
+		"defaultFreezeUnit": "DAY",
+		"gathered": false,
+		"roundType": "DOWN"
+	},
+	"customVariables": [
+		{
+			"id": 1,
+			"caption": "基础积分规则组",
+			"ruleFunctionName": "SUM",
+			"defaultRule": "2+3",
+			"cardPlanId": 10,
+			"ruleGroupList": []
+		},
+		{
+			"id": 2,
+			"caption": "大促规则组",
+			"ruleFunctionName": "MAX",
+			"defaultRule": "4 * 20",
+			"cardPlanId": 10,
+			"ruleGroupList": [
+				{
+					"ruleGroup": {
+						"logic": "OR",
+						"conditions": [
+							{
+								"title": "订单金额规则",
+								"condition": {
+									"type": "expression",
+									"uid": "1",
+									"title": "订单金额大于50",
+									"operator": "GE",
+									"values": [
+										"50"
+									]
+								}
+							}
+						]
+					},
+					"valueExpr": "2+3+4+[5]"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"caption": "基础规则组3",
+			"ruleFunctionName": "SUM",
+			"defaultRule": "3 + 4 + FIRST(2,3)",
+			"cardPlanId": 10,
+			"ruleGroupList": [
+				{
+					"ruleGroup": {
+						"title": "fd",
+						"logic": "OR",
+						"conditions": [
+							{
+								"title": "订单金额规则",
+								"condition": {
+									"type": "expression",
+									"uid": "1",
+									"title": "订单金额大于50",
+									"operator": "GE",
+									"values": [
+										"50"
+									]
+								}
+							}
+						]
+					},
+					"valueExpr": "2+3+4+[5]"
+				}
+			]
+		}
+	],
+	"CardPointPlanRuleExprFunction": [
+		{
+			"id": 1,
+			"name": "SUM",
+			"caption": "总和",
+			"desc": "总和",
+			"effectRegion": "DEFAULT",
+			"defineCreateDate": "2016-08-08 00:00:00"
+		},
+		{
+			"id": 2,
+			"name": "MAX",
+			"caption": "最大值",
+			"desc": "最大值",
+			"effectRegion": "DEFAULT",
+			"defineCreateDate": "2016-08-08 00:00:00"
+		},
+		{
+			"id": 3,
+			"name": "MIN",
+			"caption": "最小值",
+			"desc": "最小值",
+			"effectRegion": "DEFAULT",
+			"defineCreateDate": "2016-08-08 00:00:00"
+		},
+		{
+			"id": 4,
+			"name": "FIRST",
+			"caption": "第一个",
+			"desc": "第一个满足条件的规则",
+			"effectRegion": "DEFAULT",
+			"defineCreateDate": "2016-08-08 00:00:00"
+		}
+	],
+	"RulesResource": [
+		{
+			"id": 26,
+			"cardPointPlanId": 4,
+			"schemaId": 1,
+			"ruleContent": "{}",
+			"exprContent": "2+3-{1} * ({2} / 20)",
+			"ruleStartDate": "2016-10-27 11:03:36",
+			"currentValid": true,
+			"unionId": 1,
+			"version": 16,
+			"usedVarIds": "[1],[2]"
+		},
+		{
+			"id": 25,
+			"cardPointPlanId": 12,
+			"schemaId": 1,
+			"ruleStartDate": "2016-10-27 11:03:36",
+			"currentValid": true,
+			"unionId": 3,
+			"version": 10
+		}
+	],
+	"RulesMetasResource": [
+		{
+			"id": 2,
+			"caption": " 子订单",
+			"properties": [
+				{
+					"name": "sub_money",
+					"caption": "子订单金额",
+					"desc": "子订单金额",
+					"dataType": "DOUBLE",
+					"viewType": "INPUT_FLOAT",
+					"postfix": "元",
+					"id": 3,
+					"schemaId": 2,
+					"type": "PROPERTY",
+					"basal": true
+				}
+			]
+		},
+		{
+			"id": 12,
+			"caption": "会员",
+			"properties": [
+				{
+					"name": "GRADE-3",
+					"caption": "会员等级",
+					"id": 5,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10,
+					"basal": false
+				},
+				{
+					"name": "POINT-3-currentValid",
+					"caption": "当前积分",
+					"viewType": "INPUT_INT",
+					"postfix": "积分",
+					"id": 6,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10,
+					"expr": "m.fetchMemberPointList(3).currentValidPoint",
+					"basal": false
+				},
+				{
+					"name": "POINT-3-totalGain",
+					"caption": "累计前积分",
+					"viewType": "INPUT_INT",
+					"postfix": "积分",
+					"id": 7,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10,
+					"basal": false
+				},
+				{
+					"name": "POINT-3-totalConsume",
+					"caption": "累计前积分",
+					"viewType": "INPUT_INT",
+					"postfix": "积分",
+					"id": 8,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10,
+					"basal": false
+				},
+				{
+					"name": "POINT-4-currentValid",
+					"caption": "当前京豆",
+					"viewType": "INPUT_INT",
+					"postfix": "京豆",
+					"id": 9,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10,
+					"basal": false
+				},
+				{
+					"name": "POINT-4-totalGain",
+					"caption": "累计获取京豆",
+					"viewType": "INPUT_INT",
+					"postfix": "京豆",
+					"id": 10,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10,
+					"basal": false
+				},
+				{
+					"name": "POINT-4-totalConsume",
+					"caption": "累计消费京豆",
+					"viewType": "INPUT_INT",
+					"postfix": "京豆",
+					"id": 11,
+					"schemaId": 12,
+					"type": "PROPERTY",
+					"cardPlanId": 10,
+					"basal": false
+				}
+			]
+		},
+		{
+			"id": 1,
+			"caption": " 订单",
+			"properties": [
+				{
+					"name": "money",
+					"caption": "订单金额",
+					"desc": "订单金额",
+					"dataType": "LONG",
+					"viewType": "INPUT_FLOAT",
+					"postfix": "元",
+					"id": 1,
+					"schemaId": 1,
+					"type": "PROPERTY",
+					"basal": true
+				}
+			]
+		}
+	],
+	"JurisdictionResource": [
+		{
+			"permissionKey": "MG0100",
+			"name": "集团卡设置"
+		},
+		{
+			"permissionKey": "MG0200",
+			"name": "积分变更记录"
+		},
+		{
+			"permissionKey": "MG0210",
+			"name": "导出*"
+		},
+		{
+			"permissionKey": "MG0300",
+			"name": "会员信息管理"
+		},
+		{
+			"permissionKey": "MG0310",
+			"name": "会员总览"
+		},
+		{
+			"permissionKey": "MG0311",
+			"name": "导入*"
+		},
+		{
+			"permissionKey": "MG0312",
+			"name": "导出*"
+		},
+		{
+			"permissionKey": "MG0320",
+			"name": "积分明细（PS：这个菜单和积分变更记录权限联动）"
+		},
+		{
+			"permissionKey": "MG0313",
+			"name": "修改*"
+		},
+		{
+			"permissionKey": "MG0314",
+			"name": "立即营销*"
+		},
+		{
+			"permissionKey": "MG0320",
+			"name": "积分变更记录（PS：这个菜单和积分明细权限联动）"
+		},
+		{
+			"permissionKey": "MG0321",
+			"name": "导出*"
+		},
+		{
+			"permissionKey": "MG0314",
+			"name": "立即营销*"
+		},
+		{
+			"permissionKey": "MG0330",
+			"name": "等级变更记录"
+		},
+		{
+			"permissionKey": "MG0331",
+			"name": "导出*"
+		},
+		{
+			"permissionKey": "MG0314",
+			"name": "立即营销*"
+		},
+		{
+			"permissionKey": "MG0340",
+			"name": "信息变更记录"
+		},
+		{
+			"permissionKey": "MG0341",
+			"name": "导出*"
+		},
+		{
+			"permissionKey": "MG0314",
+			"name": "立即营销*"
+		},
+		{
+			"permissionKey": "MG0400",
+			"name": "忠诚度管理"
+		},
+		{
+			"permissionKey": "MG0410",
+			"name": "会员卡设置"
+		},
+		{
+			"permissionKey": "MG0420",
+			"name": "等级规则"
+		},
+		{
+			"permissionKey": "MG0430",
+			"name": "积分规则"
+		}
+	],
+	"config": {
+		"appConfig": {
+			"isNeedPermission": true,
+			"isMarketing": false
+		},
+		"memberInformationConfig": {
+			"caption": "会员信息",
+			"queryConfig": [
+				[
+					{
+						"name": "email",
+						"caption": "邮箱",
+						"desc": "邮箱",
+						"dataType": "STRING",
+						"viewType": "INPUT_STR",
+						"id": -10003,
+						"storageOrder": 3
+					},
+					{
+						"name": "mobilePhone",
+						"caption": "手机号",
+						"desc": "手机号",
+						"dataType": "STRING",
+						"viewType": "INPUT_STR",
+						"id": -10002,
+						"storageOrder": 2
+					},
+					{
+						"name": "birthday",
+						"caption": "会员生日",
+						"desc": "会员生日",
+						"dataType": "DATE",
+						"viewType": "DATE",
+						"id": -10001,
+						"storageOrder": 1
+					}
+				]
+			]
+		},
+		"pointsRecordsConfig": {
+			"caption": "积分变更记录",
+			"queryConfig": [
+				[
+					{
+						"name": "recordSubSourceName",
+						"caption": "记录具体来源",
+						"desc": "记录具体来源",
+						"dataType": "STRING",
+						"viewType": "SELECT",
+						"options": [
+							{
+								"id": -10002,
+								"name": "ORDER_REFUND",
+								"caption": "订单退单计算",
+								"desc": "订单退单计算",
+								"effectRegion": "DEFAULT",
+								"defineCreateDate": "2016-09-09 00:00:00"
+							},
+							{
+								"id": -10001,
+								"name": "ORDER_CALC",
+								"caption": "订单计算",
+								"desc": "订单计算",
+								"effectRegion": "DEFAULT",
+								"defineCreateDate": "2016-09-09 00:00:00"
+							}
+						]
+					},
+					{
+						"name": "interfaceSourceName",
+						"caption": "接口调用来源",
+						"desc": "接口调用来源",
+						"dataType": "STRING",
+						"viewType": "SELECT",
+						"options": [
+							{
+								"id": -10002,
+								"name": "EXTERNAL_DEFAULT",
+								"caption": "外部默认调用",
+								"desc": "外部默认调用",
+								"effectRegion": "DEFAULT",
+								"defineCreateDate": "2016-09-09 00:00:00",
+								"verify": false,
+								"negativeDeductable": false
+							},
+							{
+								"id": -10001,
+								"name": "INTERNAL_DEFAULT",
+								"caption": "内部使用",
+								"desc": "内部使用",
+								"effectRegion": "DEFAULT",
+								"defineCreateDate": "2016-09-09 00:00:00",
+								"verify": false,
+								"negativeDeductable": true
+							}
+						]
+					}
+				]
+			]
+		},
+		"memberCardsConfig": {
+			"caption": "会员卡设置记录",
+			"dataCountDateStart": "2015-01-01",
+			"showSynchronousGrade": false
+		}
+	}
+}

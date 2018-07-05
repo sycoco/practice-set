@@ -1,0 +1,20 @@
+<section class="points-rules">
+	<p class="head">
+		<a class="points-title">{{$ctrl.name}}</a>
+	</p>
+	<div ng-if="!$ctrl.showContent" class="leLoading">
+		<cc-loading></cc-loading>
+	</div>
+	<!--custom-variables="$ctrl.customVariables"-->
+	<div ng-if="$ctrl.showContent && $ctrl.rules" class="points-expression-block" ng-click="$ctrl.con()">
+		<le-expression-block rules="$ctrl.rules"
+							 variables="$ctrl.variables"
+							 custom-variables-ary="$ctrl.customVariablesAry"
+							 edit-custom-variable-fn="$ctrl.editCustomVariable(variable, $index, currentSchemaId, categoryName)"
+							 edit-expression-icon="true"
+							 has-footer="true"
+							 editable="false"
+							 edit-expression-fn="$ctrl.editExpression(rule)"
+							 click-the-switch-fn="$ctrl.switchRule(rule, open)"></le-expression-block>
+	</div>
+</section>

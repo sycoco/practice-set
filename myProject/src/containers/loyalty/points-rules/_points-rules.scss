@@ -1,0 +1,91 @@
+.points-rules {
+	min-width: 500px;
+	.head {
+		position: relative;
+
+		.points-title {
+			font-size: 18px;
+			color: #2d2d2d;
+			line-height: 20px;
+			text-align: left;
+		}
+
+		.points-switch {
+			position: absolute;
+			margin-left: 20px;
+		}
+	}
+
+	.points-caption {
+		margin-left: 40px;
+		font-size: 12px;
+		color: #3d3d3d;
+		text-align: right;
+		width: 84px;
+		display: inline-block;
+	}
+
+	.points-name {
+		margin-top: 13px;
+
+		.rules-start {
+			width: 130px;
+			height: 30px;
+			margin-left: 15px;
+		}
+
+		.points-data {
+			vertical-align: middle;
+			margin-left: 15px;
+			height: 30px;
+		}
+		.day-input {
+			display: inline-block;
+		}
+
+		.rules-time-span {
+			position: relative;
+
+			.rules-time {
+				vertical-align: middle;
+				height: 30px;
+				width: 60px;
+				margin-left: 15px;
+			}
+
+			.rules-time-day {
+				position: absolute;
+				right: 5px;
+				top: 0;
+				font-size: 12px;
+				color: #3d3d3d;
+			}
+		}
+	}
+
+	.points-expression-block {
+		margin: 20px 60px 20px 40px;
+	}
+
+	.foot-button {
+		margin-top: 20px;
+		text-align: center;
+
+		.save-open-points {
+			font-size: 14px;
+			color: #00aaf1;
+			text-align: center;
+			cursor: pointer;
+			margin-right: 29px;
+		}
+
+		.points-switch-open {
+			color: #ddd;
+			cursor: default;
+		}
+
+		.btn-save {
+			margin-right: 15px;
+		}
+	}
+}

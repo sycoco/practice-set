@@ -1,0 +1,28 @@
+<section class="custom-var">
+	<header class="head-title-container">
+		<span class="subtitle1" ui-sref="{{$ctrl.back}}">{{$ctrl.schemasName}}</span>
+		<span class="subtitle2" ng-init="caption = $ctrl.variable.id ? $ctrl.variable.caption : '新建' + $ctrl.variable.categoryName + '变量'">{{caption}}</span>
+	</header>
+	<div ng-if="!$ctrl.showContent" class="leLoading">
+		<cc-loading></cc-loading>
+	</div>
+	<form ng-if="$ctrl.showContent" class="form-wrapper" tooltip-type="major" name="$ctrl.form">
+		<fieldset>
+			<div class="var-name">
+				<label for="var-name" class="var-caption">变量名称：</label>
+				<input class="var-caption-input" type="text" id="var-name" name="varName" ng-model="$ctrl.variable.caption" cc-validator required required-msg="请填写自定义变量名称！" placeholder="必填" maxlength="20" autofocus onfocus="this.select()"/>
+			</div>
+			<div class="var-logic">
+				<label class="var-caption">运算逻辑：</label>
+				<cc-radio class="logic-list" ng-repeat="logic in $ctrl.logics.setting" ng-model="$ctrl.logics.value" ng-value="logic" ng-disabled="$ctrl.logics.disabled"><span title="{{logic.tips}}">{{logic.name}}</span></cc-radio>
+				<p class="other-logic">以下规则均不满足条件时，变量表达式＝<input type="text" class="show-logic" ng-model="$ctrl.variable.defaultRuleStr" ng-click="$ctrl.jumpToRullEditor()"/></p>
+			</div>
+		</fieldset>
+	</form>
+	<le-rule-editor ng-if="$ctrl.showContent" ng-click="$ctrl.con()" rule-list="$ctrl.ruleList" edit-click="$ctrl.editClick(index)"></le-rule-editor>
+	<footer ng-if="$ctrl.showContent" class="foot-container">
+		<span class="other-button" ng-class="{disabled: !$ctrl.variable.id }" ng-click="$ctrl.variable.id && $ctrl.checkCustomVarData('del')">删除变量</span>
+		<button class="btn-ok btn-save" ng-click="$ctrl.checkCustomVarData('save')">保存</button>
+		<button class="btn-cancel" ng-click="$ctrl.backToPointsRules()">取消</button>
+	</footer>
+</section>

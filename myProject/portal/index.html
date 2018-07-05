@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ccms">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="../node_modules/ccms-components/ccms-components.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_kizx24bi9b4t2o6r.css">
+	<title>portal</title>
+	<link rel="stylesheet" type="text/css" href="https://shuyun-static.b0.upaiyun.com/components/jquery.ui.timepicker/1.1.1/development-bundle/themes/base/jquery.ui.all.css">
+	<link rel="stylesheet" type="text/css" href="https://shuyun-static.b0.upaiyun.com/components/jquery.ui.timepicker/1.1.1/timepicker/css/jquery-ui-timepicker-addon.css">
+	<link rel="stylesheet" href="./app-8197dfaba92e773e8c13.min.css">
+	<link rel="stylesheet" href="./app-091ad3434d9a32bc2fb2.min.css">
+	<style>
+		.logo {
+			background: url('./shuyun-logo.png')
+		}
+	</style>
+</head>
+
+<body ng-app="ccms">
+	<div class="commHeader">
+		<div>
+			<div class="header clearfix">
+				<h1 class="fl"><a class="logo" href>数据赢家</a></h1>
+				<nav class="fl">
+					<ul class="nav fl">
+						<li>
+							<span><a href="javascript:;">首页</a></span>
+						</li>
+						<li>
+							<span><a href="javascript:;">主动营销</a></span>
+						</li>
+						<li>
+							<span><a href="javascript:;">权益管理</a></span>
+						</li>
+						<li class="navCur">
+							<span><a href="javascript:;">忠诚度管理</a></span>
+						</li>
+						<li>
+							<span><a href="javascript:;">联合营销</a></span>
+						</li>
+					</ul>
+					<div class="more fl comboboxParent">
+						<a href="javascript:;">更多<i class="helloarrow"></i></a>
+					</div>
+				</nav>
+				<div class="headerAside">
+					<span class="hello fr comboboxParent">
+						<b><a href="./login/login.html">登陆</a></b>
+      				</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ui-view class="portalContent"></ui-view>
+	<script src="/node_modules/angular/angular.js"></script>
+	<script src="/node_modules/angular-resource/angular-resource.js"></script>
+	<script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+	<script src="/node_modules/oclazyload/dist/ocLazyLoad.js"></script>
+	<script src="/node_modules/kuitos-angular-utils/polyfills/ui-router-require-polyfill.js"></script>
+	<script src="/node_modules/oclazyload/dist/ocLazyLoad.js"></script>
+	<script src="/node_modules/ui-router-extras/release/ct-ui-router-extras.min.js"></script>
+	<script src="/node_modules/kuitos-angular-utils/services/base-services.js"></script>
+
+	<script src="/node_modules/ccms-components/ccms-components.js"></script>
+	<script src="/node_modules/ccms-sdk/es5/ccms-sdk.js"></script>
+	<script src="./project.js"></script>
+
+	<script>
+		window.CCMS_INFOS_CONFIG = {
+			UAL: '',// UAL: 'http://101.200.34.124:8080',
+			TENANT: 'cartoon'
+		};
+		angular.module('ccms', ['ui.router.requirePolyfill', 'ccms.components', 'ccms.projectRouter', 'ccms.sdk'])
+			.config(config)
+			.run(['$state', '$http', function($state, $http) {
+			}]);
+
+
+		config.$inject = [
+			'$projectProvider',
+			'$urlRouterProvider',
+			'$httpProvider',
+			'ccmsTokenRefreshInterceptor',
+			'$ccmsAuth']
+		function config($projectProvider, $urlRouterProvider, $httpProvider, ccmsTokenRefreshInterceptor, $ccmsAuth) {
+			$ccmsAuth.setRequestCredential(JSON.parse(localStorage.getItem('ccmsRequestCredential') || '{}'));
+			// 设定刷新token的接口url
+			$ccmsAuth.setRefreshTokenUrl(window.CCMS_INFOS_CONFIG.UAL + '/web-portal/credentials/refresh');
+			// 设定认证失败后的逻辑(比如页面跳转等)
+			$ccmsAuth.setAuthFailedBehavior(function() {
+				// ...do something like location redirect
+				console.error('授权失败！');
+			});
+
+			$httpProvider.interceptors.push(function() {
+				return ccmsTokenRefreshInterceptor;
+			});
+
+			$httpProvider.defaults.withCredentials = true;
+			Object.freeze($httpProvider);
+
+
+			$urlRouterProvider.otherwise("/le/home");
+			$projectProvider
+				.state('le', {
+					url: '/le',
+					templateUrl: '/index.html'
+				});
+		}
+	</script>
+
+</body>
+
+</html>

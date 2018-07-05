@@ -1,0 +1,175 @@
+.le {
+	.meta-data-section {
+		min-height: 30px;
+		display: flex;
+		align-items: center;
+		.date-picker-holder{
+			width: 182px;
+		}
+		.date-uni-ymd{
+			width: 130px;
+		}
+		.dropdown-select .dropdown-panel .dropdown-list{
+			max-height: 213px;
+		}
+		.dropdown-small {
+			width: 90px;
+			margin-right: 8px;
+		}
+		.dropdown-mini{
+			width: 60px;
+			margin-right: 8px;
+		}
+		.meta-data-number, .meta-data-string {
+			display: flex;
+			align-items: center;
+			.wrap-text {
+				position: relative;
+				input {
+					width: 120px;
+				}
+				.input-suffix {
+					display: inline-block;
+					text-align: right;
+					color: #999999;
+					border-left: none;
+					height: 30px;
+					line-height: 30px;
+					position: absolute;
+					right: 8px;
+					top: 0;
+				}
+			}
+			.segmentation{
+				 margin: 0 5px;
+			 }
+			input[type=number], select{
+				padding-right: 20px;
+			}
+		}
+		.meta-data-string {
+			.wrap-text {
+				input {
+					width: 200px;
+				}
+			}
+		}
+		.goods{
+			position: relative;
+			cursor: pointer;
+			display: flex;
+			align-items: flex-start;
+			input{
+				cursor: pointer;
+			}
+			.good-input{
+				width: 195px;
+			}
+			&:after{
+				content: '...';
+				display: inline-block;
+				position: absolute;
+				background:#f9f9f9;
+				width:27px;
+				height:28px;
+				right: 1px;
+				top: 1px;
+				text-align: center;
+				color: #999999;
+			}
+		}
+		.flag{
+			.flag-itme-wrap{
+					display: inline-flex;
+					max-width: 400px;
+					flex-wrap: wrap;
+					margin-bottom: -8px;
+					//justify-content: center;
+					align-items: center;
+					line-height: 22px;
+				.flagItem{
+						display: inline-block;
+						background:#fdfdfd;
+						border:1px solid #e3e3e3;
+						border-radius:2px;
+						padding: 0 4px;
+						min-width: 58px;
+						height:24px;
+						text-align: center;
+						margin: 4px;
+						color: #999999;
+						cursor: pointer;
+						.icon-flag{
+							font-size: 9px;
+							.title{
+								margin-left: 6px;
+								font-size: 12px;
+								color: #999999;
+							}
+						}
+						.flag-yellow{
+							color: #f0c03e;
+						}
+						.flag-red{
+							color: red;
+						}
+						.flag-blue{
+							color: blue;
+						}
+						.flag-green{
+							color: green;
+						}
+						// pink->purple 后端让我将错就错~~
+						.flag-pink{
+							color: purple;
+						}
+						//.flag-red{
+						//	color: red;
+						//}
+						&:hover {
+							background: #eff7ff;
+						}
+						&.item-selected {
+							background: #eff7ff;
+							color: #0083ba;
+							.title{
+								color: #0083ba;
+							}
+						}
+					}
+				}
+		}
+		.meta-data-date{
+			display: flex;
+			align-items: flex-start;
+			.wrap-date-container{
+				display: flex;
+				align-items: center;
+				.wrap-date{
+					display: inline;
+					width: 100%;
+				}
+				.wrap-date + .wrap-date{
+					margin-top: 10px;
+				}
+				.segmentation{
+					margin: 0 5px;
+				}
+				.date-uni-all{
+					.date-picker-holder{
+						width: 185px;
+					}
+				}
+			}
+		}
+		.radio{
+			.radio-item-wrap{
+				display: inline-block;
+				.radio-item{
+					margin-right: 30px;
+				}
+			}
+		}
+
+	}
+}

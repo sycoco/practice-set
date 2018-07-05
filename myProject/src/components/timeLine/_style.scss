@@ -1,0 +1,72 @@
+$defaultFontSize: 12px !default;
+$defaultSymbolColor: #999999;
+$defaultDescriptionColor: #999999;
+$activeSymbolColor: #00aaf1;
+$activeDescriptionColor: #00aaf1;
+
+.time-line-block{
+  font-size: $defaultFontSize;
+  width: 315px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  &.vertical{
+    flex-flow: column nowrap;
+
+    .time-line-compose{
+      flex-flow: column nowrap;
+    }
+  }
+
+  .time-line-compose{
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    &.lastItem{
+      flex: none;
+    }
+  }
+
+  .time-line-item{
+    flex: none;
+    display: flex;
+    align-items: center;
+
+    .item-symbol{
+      background-color: $defaultSymbolColor;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      margin-right: .5em;
+    }
+
+    .item-des{
+      color: $defaultDescriptionColor;
+    }
+
+    &.active{
+      .item-symbol{
+        background-color: $activeSymbolColor;
+      }
+
+      .item-des{
+        color: $activeDescriptionColor;
+      }
+    }
+  }
+
+  .time-line-segment{
+    height: 1px;
+    border-top: 1px solid #e0e0e0;
+    flex: 1;
+    margin: auto 16px;
+  }
+}

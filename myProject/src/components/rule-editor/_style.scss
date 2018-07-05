@@ -1,0 +1,84 @@
+.rule-editor-main-container {
+	margin-top: 15px;
+
+	.rule-item {
+		border: solid 1px #e3e3e3;
+		margin-top: 11px;
+
+		.rule-item-header {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 15px;
+			line-height: 35px;
+			background-color: #f0f0f0;
+
+			.ruleTitle {
+				min-width: 200px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				font-size: 12px;
+				color: #666666;
+			}
+
+			.ruleOperator-wrap {
+				flex-shrink: 0;
+				display: flex;
+				li + li {
+					margin-left: 20px;
+				}
+				.ruleOperator-expand {
+					margin-left: 25px;
+					font-size: 12px;
+					color: #0083ba;
+					line-height: 35px;
+					text-align: left;
+					cursor: pointer;
+				}
+
+			}
+		}
+		.rule-itme-container {
+			display: -webkit-flex;
+			display: flex;
+			padding: 0 15px;
+			background-color: rgb(252, 252, 252);
+
+			.rule-itemlist-block {
+				border-right: dashed 1px #e5e5e5;
+				width: 60%;
+				padding-right: 16px;
+			}
+
+			.rule-results-block {
+				flex: 1;
+				margin-left: 16px;
+			}
+
+			.rule-itemlist-block, .rule-results-block {
+
+				> p {
+					color: #999999;
+					border-bottom: 1px solid #ebebeb;
+					line-height: 39px;
+
+				}
+
+				.conditions-title {
+					color: #3d3d3d;
+				}
+
+				:last-child {
+					border-bottom: none;
+				}
+				.prepositions{
+					color: #999999;
+				}
+			}
+		}
+
+	}
+	.rule-animation {
+		animation: fade-in 0.5s;
+	}
+}
