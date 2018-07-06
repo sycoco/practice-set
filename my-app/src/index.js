@@ -65,21 +65,29 @@ class LikeButton extends Component {
     }
 
     render () {
-        const likedText = this.props.likedText || '取消';
-        const unlikedText = this.props.unlikedText || '点赞';
-        const wordings = this.props.wordings || {
-            likedText: '取消',
-            unlikedText: '点赞'
-        }
+        const users = [
+            { username: 'Jerry', age: 21, gender: 'male' },
+            { username: 'Tomy', age: 22, gender: 'male123' },
+            { username: 'Lily', age: 19, gender: 'female' },
+            { username: 'Lucy', age: 20, gender: 'female' }
+        ];
         return (
-            <button onClick={this.handleClickOnLikeButton.bind(this)}>
-                {this.state.isLiked ? wordings.likedText: wordings.unlikedText} 👍
-                {this.state.isSelected ? '选中' : '未选中'}
-            </button>
+            <div>
+                {users.map((user) => {
+                    return (
+                        <div>
+                            <div>姓名：{user.username}</div>
+                            <div>年龄：{user.age}</div>
+                            <div>性别：{user.gender}</div>
+                            <hr />
+                        </div>
+                    )
+                })}
+            </div>
         )
     }
 }
 ReactDOM.render(
-    <Header />,
+    <LikeButton />,
     document.getElementById('root')
 );
