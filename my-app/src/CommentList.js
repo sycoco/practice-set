@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Comment from './Comment'
 
 class CommentList extends Component {
+    constructor() {
+        super();
+    }
     static defaultProps = {
         comments: []
     }

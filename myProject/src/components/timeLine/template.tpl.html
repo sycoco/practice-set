@@ -1,9 +1,0 @@
-<ul class="time-line-block" ng-class="$ctrl.type">
-  <li class="time-line-compose" ng-repeat="item in $ctrl.stateList track by $index" ng-class="{'lastItem': $index === $ctrl.stateList.length - 1}">
-    <div class="time-line-item" ng-class="{'active': $ctrl.currentState === $index}">
-      <span class="item-symbol" ng-bind="$ctrl.symbol ? $ctrl.symbol : ($index + 1)"></span>
-      <span class="item-des" ng-bind="item.name"></span>
-    </div>
-    <div class="time-line-segment" ng-if="$index < ($ctrl.stateList.length - 1)"> </div>
-  </li>
-</ul>

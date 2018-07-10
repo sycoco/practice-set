@@ -1,9 +1,0 @@
-<div class="shopList-wrap">
-	<span class="shop-item" ng-mousemove="hover=true" ng-mouseleave="hover=false"
-		  ng-class="{'item-selected': item.selected, 'disable': item.disable}" ng-repeat="item in $ctrl.shopList" ng-click="$ctrl.clickItem(item)">
-		<span class="iconfont icon-taobao-fill" style="color: #FF4401; margin-left: 11px; margin-right: 7px"></span>
-		<span ng-hide="hover && item.disable" class="caption">{{item.caption}}</span>
-		<span ng-show="item.selected" class="iconfont icon-checked-tri"></span>
-		<span class="error-tip" ng-show="hover && item.disable">已参与集团卡:{{item.hasBindCardCaption}}</span>
-	</span>
-</div>

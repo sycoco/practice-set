@@ -1,7 +1,0 @@
-<div class="folding-bar-container">
-	<div class="folding-bar-header" ng-click="$ctrl.clickBar()">
-		<div class="title" title="{{$ctrl.titleName}}">{{$ctrl.titleName}}</div>
-		<span class="iconfont icon-arrow arrow" title="{{$ctrl.expand ? '折叠' : '展开'}}" ng-class="{'arrow-up': $ctrl.expand}"></span>
-	</div>
-	<div class="folding-bar-content" ng-show="$ctrl.expand" ng-transclude></div>
-</div>
