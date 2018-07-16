@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="copy.js"></script>
+</head>
+<body>
+		<!-- Target -->
+	<input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
+
+	<!-- Trigger -->
+	<button class="btn" data-clipboard-target="#foo">
+	    <img src="images/clippy.svg" alt="Copy to clipboard">
+	</button>
+</body>
+<script>
+	new Clipboard('.btn');
+</script>
+</html>
