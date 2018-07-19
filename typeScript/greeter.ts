@@ -13,13 +13,3 @@ interface Person {
 // function greeter(person : Person) {
 //     return "Hello, " + person.firstName + " " + person.lastName;
 // }
-
-
-
-let list: Array<number> = [1, 2, 3];
-let arr: number[] =[1,34];
-
-
-// 枚举
-enum Color {Red, Green, Blue}
-let c: Color = Color.Green;

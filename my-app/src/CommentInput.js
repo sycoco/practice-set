@@ -7,7 +7,6 @@ class CommentInput extends Component {
             username: '',
             content: ''
         }
-        console.log(this,'this.props---constructor');
     }
     handleUsernameChange (event) {
         this.setState({
