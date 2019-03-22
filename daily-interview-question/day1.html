@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day 1</title>
+</head>
+<body>
+<script>
+    // 类型的隐式转换,考引用类型在比较运算符时候,隐式转换会调用本类型toString或valueOf方法.
+    // 下面代码中 a 在什么情况下会打印 1？
+    // 方法一：
+    let a = {
+        i: 1,
+        toString: function toString() {return a.i++}
+        // toString() {
+        //     return a.i++;
+        // }
+    };
+    if (a == 1 && a == 2 && a == 3) {
+        console.log('1');
+    }
+    // 方法二：
+
+    let array1 = [1,2,3];
+    array1.join = array1.shift;
+    if (array1 == 1 && array1 == 2 && array1 == 3) {
+        console.log('1--array1');
+    }
+</script>
+
+</body>
+</html>
